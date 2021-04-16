@@ -51,9 +51,11 @@ Much like with client side, 'server side' means everything that happens on the s
 
 We already know what HTTP is. So now the question is -
 #### **What is HTTPS**?
-HTTPS stands for *Hypertext Transfer Protocol Secure*. The problem with the regular HTTP protocol is that the information that flows from server to browser is not encrypted, which means it can be easily stolen. HTTPS protocols remedy this by using an SSL (secure sockets layer) certificate, which helps create a secure encrypted connection between the server and the browser, thereby protecting potentially sensitive information from being stolen as it is transferred between the server and the browser.
+HTTPS stands for *Hypertext Transfer Protocol Secure*. The problem with the regular HTTP protocol is that the information that flows from server to browser is not encrypted, which means it can be easily stolen. HTTPS protocols remedy this by using an **SSL** (Secure Sockets Layer) certificate, which helps create a secure encrypted connection between the server and the browser, thereby protecting potentially sensitive information from being stolen as it is transferred between the server and the browser.
 
-![http vs https](https://comodosslstore.com/blog/wp-content/uploads/2017/04/http-vs-https.jpg)
+![http vs https](https://www.jooexplorer.com/wp-content/uploads/2018/02/http_to_https-1.jpg)
+
+>The most important difference between the two protocols is the [**SSL certificate**](https://www.cloudflare.com/en-in/learning/ssl/what-is-an-ssl-certificate/). In fact, HTTPS is basically an HTTP protocol with additional security. However, this additional security can be extremely important, especially for websites that take sensitive data from its users, such as credit card information and passwords.
 
 ### **Frameworks vs Libraries**
 
