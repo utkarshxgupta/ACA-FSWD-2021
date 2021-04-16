@@ -1,7 +1,7 @@
 # Assignment 1.0
 
 ## **Basic CMD Commands**
-&nbsp;
+
 1. **CD** - Change Directory.  
    * Allows to move from one directory to another. 
    * To change drive, Directly write D: to switch from C to D Drive.
