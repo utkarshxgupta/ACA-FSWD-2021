@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 3 ACA_FSWD_2021</title>
+    <style>
+      body {
+        background-color: rgb(32, 33, 36);
+        text-align: center;
+        align-items: center;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0 0 5px;
+        padding: 0;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        display:flex;
+      }
+
+      li {
+        float: left;
+      }
+
+      li button {
+        background-color: transparent;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+        font-family: 'Segoe UI';
+        border-color: transparent;
+        font-size:20px;
+      }
+
+      li button:hover {
+        background-color: rgb(158, 94, 218);
+        border-radius: 15px;
+      }
+      button {
+        font-family: sans-serif; 
+        padding: 7px; 
+        font-weight: bold;
+      }
+      p{
+          color:white;
+          font-family:'Segoe UI';
+          font-size:20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1
+      style="
+        font-size: 45px;
+        color: white;
+        font-family: 'Segoe UI';
+        background-color: rgb(145, 70, 216);
+        margin: 0px 0px 10px;
+        padding: 15px;
+        position: sticky;
+      "
+    >
+      Data Vault
+    </h1>
+    <ul>
+      <li><button onclick="loginbutton()">View Data</button></li>
+      <li><button onclick="signupbutton()">Sign Up</button></li>
+    </ul>
+    <section id="login" style="display:none;">
+        <form>
+            <input style="margin: 20px;font-family:'Segoe UI';font-size:15px;padding: 6px;" type="text" id="DataToken" placeholder="Enter your Token" size="30" required>
+            <br>
+            <input type="button" value="View Data" id="ViewData" style="font-weight:bold;padding:7px;">
+        </form>
+        <p id="MessageLogin"></p>
+    </section>
+    <section id="signup" style="display:none;">
+        <br>
+        <button id="GetToken">Generate Token</button>
+        <p id="DisplayToken"></p>
+        <form>
+            <input style="margin: 5px;font-family:'Segoe UI';font-size:15px;padding: 6px;" type="text" id="Username" placeholder="User Name" size="30" required>
+            <br>
+            <input style="margin: 5px;font-family:'Segoe UI';font-size:15px;padding: 6px;" type="text" id="Data" placeholder="Enter Data" size="30" required>
+            <br>
+            <input style="margin: 5px 0px 15px;font-family:'Segoe UI';font-size:15px;padding: 6px;" type="text" id="Token" placeholder="Enter the token generated" size="30" required>
+            <br>
+            <input type="button" value="Submit" id="Register" style="font-weight:bold;padding:7px;">
+        </form>
+        <p id="MessageRegister"></p>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
