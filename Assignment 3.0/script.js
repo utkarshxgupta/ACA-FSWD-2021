@@ -22,9 +22,13 @@ function signupbutton() {
 }
 let tokenbutton = document.getElementById("GetToken")
 tokenbutton.onclick = async function()
-{   let RESP = await fetch('http://localhost:12345/get_token');let res =  await RESP.text();
+{   let RESP = await fetch('http://localhost:12345/get_token');
+    let res =  await RESP.text();
+    var start=res.indexOf(':');
+    var end=res.lastIndexOf('"');
+    var finres=res.slice(start+3,end);
     var disp1 = document.getElementById("DisplayToken");
-    disp1.innerHTML="Your Token is : " + res ;
+    disp1.innerHTML="Your Token is : " + finres ;
 }
 let register = document.getElementById("Register")
 register.onclick = async function() {
@@ -60,7 +64,13 @@ vd.onclick =  async function() {
     console.log(r2);
     if(r2.ok) {
         let b = await r2.text();
+        var startdata=b.indexOf(":");
+        var enddata=b.indexOf(",");
+        var startname=b.lastIndexOf(":");
+        var endname=b.lastIndexOf('"');
         var disp2 = document.getElementById("MessageLogin");
-        disp2.innerHTML="Your Data is : " + "<br><br>" + b;
+        var user=b.slice(startname+3,endname);
+        var dataa=b.slice(startdata+3,enddata-1);
+        disp2.innerHTML="Your Username is : "+ user +" <br> Your Data is : " + dataa;
         }
     }
